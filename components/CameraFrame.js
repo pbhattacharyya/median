@@ -318,6 +318,9 @@ export default class CameraScreen extends React.Component {
         </View>
 
         <View style={styles.containerWhole}>
+          <View style={styles.imageArea}>
+            <Image source={require('./food.png')}  style={{width: 187, height: 376}} /> {/* half-face.png, bench.png, plate.png, food.png, tree.png */}
+          </View> 
           <View style={styles.cameraArea}>
             <View style={{ flex: 1 }}>
               <Camera
@@ -344,9 +347,6 @@ export default class CameraScreen extends React.Component {
               {this.state.showMoreOptions && this.renderMoreOptions()}
             </View>
           </View>
-          <View style={styles.imageArea}>
-            <Image source={require('./black.png')}  style={{width: 187, height: 376}} /> {/* half-face.png, bench.png, plate.png, food.png, tree.png */}
-          </View> 
         </View>
 
         <View style={{flex: 0.18}}>
