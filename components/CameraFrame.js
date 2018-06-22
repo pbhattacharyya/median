@@ -245,10 +245,10 @@ export default class CameraScreen extends React.Component {
     <View
       style={styles.topBar}>
       <TouchableOpacity style={styles.toggleButton} onPress={this.toggleFacing}>
-        <Ionicons name="ios-reverse-camera" size={28} color="white" />
+        <Ionicons name="ios-reverse-camera" size={32} color="white" />
       </TouchableOpacity>
       <TouchableOpacity style={styles.toggleButton} onPress={this.toggleFlash}>
-        <MaterialIcons name={flashIcons[this.state.flash]} size={28} color="white" />
+        <MaterialIcons name={flashIcons[this.state.flash]} size={32} color="white" />
       </TouchableOpacity>
 {/*       <TouchableOpacity style={styles.toggleButton} onPress={this.toggleWB}>
         <MaterialIcons name={wbIcons[this.state.whiteBalance]} size={32} color="white" />
@@ -269,7 +269,7 @@ export default class CameraScreen extends React.Component {
           onPress={this.takePicture}
           style={{ alignSelf: 'center' }}
         >
-          <Ionicons name="ios-radio-button-on" size={60} color="white" />
+          <Ionicons name="ios-radio-button-on" size={75} color="white" />
         </TouchableOpacity>
       </View> 
 {/*       <TouchableOpacity style={styles.bottomButton} onPress={this.toggleView}>
@@ -313,13 +313,13 @@ export default class CameraScreen extends React.Component {
     (
       <View style={{flex: 1}}>
 
-        <View style={{flex: 0.16}}>
+        <View style={{flex: 0.18}}>
           {this.renderTopBar()} 
         </View>
 
         <View style={styles.containerWhole}>
           <View style={styles.imageArea}>
-            <Image source={require('../images/food.png')}  style={{width: 187, height: 376}} /> 
+            <Image source={require('../images/plate.png')}  style={{width: 187, height: 376}} /> 
             {/* half-face.png, bench.png, plate.png, food.png, tree.png */}
           </View> 
           <View style={styles.cameraArea}>
@@ -350,7 +350,7 @@ export default class CameraScreen extends React.Component {
           </View>
         </View>
 
-        <View style={{flex: 0.18}}>
+        <View style={{flex: 0.2}}>
             {this.renderBottomBar()}
         </View>
 
@@ -397,7 +397,8 @@ const styles = StyleSheet.create({
 
   },
   topBar: {
-    flex: 1,
+    flex: 1.5,
+    paddingTop: 6,
     backgroundColor: '#434343',
     flexDirection: 'row',
     justifyContent: 'space-around',

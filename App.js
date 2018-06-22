@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     flex: 0.15
   },
   bottomArea: {
-    flex: 0.3
+    flex: 0.15
   },
   header: {
     fontSize: 30,
