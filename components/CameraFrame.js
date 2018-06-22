@@ -321,7 +321,7 @@ export default class CameraScreen extends React.Component {
           <View style={styles.imageArea}> {/* this is where the first half of the challenge goes */}
             <Image source={require('../images/food.png')}  style={{width: 187, height: 376}} /> 
             {/* half-face.png, bench.png, plate.png, food.png, tree.png */}
-          </View> 
+          </View>   
 
           <View style={styles.cameraArea}> {/* this is the camera view */}
             <View style={{ flex: 1 }}>
@@ -345,11 +345,11 @@ export default class CameraScreen extends React.Component {
                 >
               </Camera>
               {this.state.faceDetecting && this.renderFaces()}
-              {firthis.state.faceDetecting && this.renderLandmarks()}
+              {this.state.faceDetecting && this.renderLandmarks()}
               {this.state.showMoreOptions && this.renderMoreOptions()}
             </View>
           </View>
-          {/* to switch sides, paste first-half code on the next line */}
+          {/* to switch right and left, cut and paste the code from lines 321-324 below this line */}
 
         </View>
 
